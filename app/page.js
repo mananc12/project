@@ -131,7 +131,11 @@ export default function Home() {
         {selectedFile ? (
           <>
             {selectedFile.name.endsWith(".ed") && (
-              <Editor content={content} onChange={handleContentChange} />
+              // <Editor content={content} onChange={handleContentChange} />
+              <Editor
+                initialContent={selectedFile.content}
+                onChange={handleContentChange}
+              />
             )}
             {selectedFile.name.endsWith(".note") && <NoteMaker />}
             {selectedFile.name.endsWith(".lt") && <ListMaker />}
