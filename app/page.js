@@ -2,11 +2,11 @@
 "use client";
 
 import { useState } from "react";
-import Sidebar from "./components/Sidebar";
-import Editor from "./components/Editor";
-import NoteMaker from "./components/NoteMaker";
-import ListMaker from "./components/ListMaker";
-import ReadmePreview from "./components/ReadmePreview";
+import Sidebar from "./components/Sidebar/page";
+import Editor from "./components/Editor/page";
+import NoteMaker from "./components/NoteMaker/page";
+import ListMaker from "./components/ListMaker/page";
+import ReadmePreview from "./components/ReadmePreview/page";
 import FolderIcon from "@mui/icons-material/Folder";
 import InsertDriveFileIcon from "@mui/icons-material/InsertDriveFile";
 import EditNoteIcon from "@mui/icons-material/EditNote";
