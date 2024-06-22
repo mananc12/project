@@ -1,3 +1,4 @@
+"use client"
 import { useState } from "react";
 import FolderIcon from "@mui/icons-material/Folder";
 import InsertDriveFileIcon from "@mui/icons-material/InsertDriveFile";
