@@ -68,7 +68,7 @@ export default function NoteMaker() {
                             {...provided.draggableProps}
                             {...provided.dragHandleProps}
                             className={`p-2 mb-2 border font-semibold bg-white ${
-                              snapshot.isDragging ? 'bg-green-600 text-white' : ''
+                              snapshot.isDragging ? 'bg-yellow-600 text-white' : ''
                             }`}
                           >
                             {note.content}
