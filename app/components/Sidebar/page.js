@@ -58,7 +58,7 @@ export default function Sidebar({
               className={`cursor-pointer ${file === selectedFolder ? 'bg-gray-600' : ''}`}
             >
               <div
-                className={`bg-white text-gray-800 mb-2 p-1 flex justify-between items-center ${file === selectedFolder ? 'bg-gray-600 text-white' : ''}`}
+                className={`bg-white text-gray-800 mb-2 p-1 flex justify-between items-center ${file === selectedFolder ? 'bg-gray-600 text-red-400' : ''}`}
                 onClick={() => file.type === 'folder' ? onFolderClick(file) : onFileClick(file)}
               >
                 <div>
