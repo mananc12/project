@@ -1,4 +1,5 @@
 // components/Editor.js
+"use client";
 export default function Editor(props) {
     return (
       <textarea
