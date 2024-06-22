@@ -2,7 +2,7 @@
 "use client";
 
 import { useState } from 'react';
-import marked from 'marked'; // Importing 'marked' function for markdown parsing
+import * as marked from 'marked'; // Importing 'marked' function for markdown parsing
 
 export default function ReadmePreview({ content }) {
   const [rawContent, setRawContent] = useState(content || ''); // State to manage raw README content
