@@ -1,16 +1,22 @@
 // components/Editor.js
-export default function Editor({ content, onchange }) {
-    return (
-      <textarea
-        value={content}
-        onChange={(e) => onchange(e.target.value)}
-        className="w-full h-full p-2"
-      />
-    );
-  }
-  
-  
+"use client"; // Ensure this is a client component
 
-  
+import { useState } from 'react';
 
-  
+export default function Editor({ initialContent, onContentChange }) {
+  const [content, setContent] = useState(initialContent);
+
+  const handleChange = (e) => {
+    const newContent = e.target.value;
+    setContent(newContent);
+    onContentChange(newContent); // Notify parent component about the change
+  };
+
+  return (
+    <textarea
+      value={content}
+      onChange={handleChange}
+      className="w-full h-full p-2"
+    />
+  );
+}
