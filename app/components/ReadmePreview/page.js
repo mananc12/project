@@ -1,15 +1,16 @@
 // components/ReadmePreview.js
-"use client"; // Using client-side rendering
+"use client";
 
-import { useState } from 'react'; // Importing useState hook from React
-import { marked } from 'marked'; // Importing 'marked' function for markdown parsing
+import { useState } from 'react';
+import marked from 'marked'; // Importing 'marked' function for markdown parsing
 
 export default function ReadmePreview({ content }) {
-  const [rawContent, setRawContent] = useState(content); // State to manage raw README content
+  const [rawContent, setRawContent] = useState(content || ''); // State to manage raw README content
 
   // Function to handle content change in textarea
   const handleContentChange = (e) => {
-    setRawContent(e.target.value); // Update rawContent state with new content from textarea
+    const newContent = e.target.value;
+    setRawContent(newContent); // Update rawContent state with new content from textarea
   };
 
   return (
